@@ -1,4 +1,4 @@
-function exemplo() {
+/*function exemplo() {
   var x = 1
   let y = 7
   var z = 100
@@ -18,3 +18,7 @@ function exemplo() {
   console.log(y)
   console.log(w)
 }
+let x = 5;
+x += 3;
+console.log(x);
+*/
