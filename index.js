@@ -35,7 +35,7 @@
  * retornar o resultado/mensagem (output)
  */
 
-const idade = prompt('coloque sua idade');
+/*const idade = prompt('coloque sua idade');
 console.log(idade)
 if(idade > 10 && idade < 15) {
   console.log('mesada igual R$150 ')
@@ -48,4 +48,4 @@ else if(idade < 11) {
 }
 else if(idade > 19) {
   console.log('Vai trabalhar, vagabundo')
-}
+}*/
