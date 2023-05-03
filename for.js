@@ -49,7 +49,7 @@ if (valor === 1) {
 else if (valor === 2) {
     console.log(arrayFor * 2)
 }*/
-const numero = parseInt(prompt('Digite aqui um numero de 1 a 10'))
+/*const numero = parseInt(prompt('Digite aqui um numero de 1 a 10'))
 
 for (let i = 1; i <= 10; i++){
     const resultado = numero * i;
@@ -58,4 +58,50 @@ for (let i = 1; i <= 10; i++){
         tabuada += `${multiplicador}\t`;
     }
     console.log(tabuada);
+}*/
+//tabuada feita pelo professor
+/*const num = 5
+const tabuadaValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for(let valor of tabuadaValue){
+    console.log(`${valor} x ${num} = ${valor * num}`)
+}
+for(let i = 0; i < tabuadaValue.length; i++){
+    div.innerHTML += `<p>${tabuadaValue[i]} x ${num} = ${tabuadaValue[i] * num}</p>`
+}*/
+const div = document.getElementById('exemplo')
+const prods = document.getElementById('produtos')
+const produtos = [
+    {
+        "nome": "mouse",
+        "quantidade": 18,
+        "preco": 10
+    },
+    {
+        "nome": "teclado",
+        "quantidade": 30,
+        "preco": 40
+    },
+    {
+        "nome": "monitor",
+        "quantidade": 10,
+        "preco": 70
+    },
+    {
+        "nome": "gabinetes",
+        "quantidade": 18,
+        "preco": 100
+    },
+    {
+        "nome": "headset",
+        "quantidade": 8,
+        "preco": 10
+    },
+]
+for(let produto of produtos){
+    let total = produto.preco * produto.quantidade
+    prods.innerHTML += 
+    `<p>
+        Estoque total ${produto.nome} - 
+        ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})}
+    </p>`
 }
